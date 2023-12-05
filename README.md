@@ -1,4 +1,60 @@
 # Number-Recognition
+# Usage Guide and Project Description
+
+## Project Overview
+
+This project employs machine learning to recognize digits from images using a Support Vector Machine (SVM) model and the Histogram of Oriented Gradients (HOG) feature.
+
+## Installation
+
+### Training Project (`train.py`)
+
+1. **Clone the Repository:**
+   - Clone the repository to your computer:
+
+     git clone https://github.com/dinhtuananh188/Number-Recognition/
+
+
+2. **Install Required Libraries:**
+   - Ensure that you have installed the necessary libraries. You can use pip for installation:
+     ```bash
+     pip install opencv-python numpy scikit-learn
+     ```
+
+3. **Prepare Training Data:**
+   - Training data is stored in directories `Sample0` through `Sample9`. Each directory contains images corresponding to a specific digit.
+
+4. **Extract HOG Features and Train SVM:**
+   - Run the Python script to extract HOG features and train the SVM model:
+     ```bash
+     python train.py
+     ```
+   - The SVM model is saved in the file `model.pkl`.
+
+### Testing Project (`test.py`)
+
+1. **Install Required Libraries:**
+   - Ensure that you have installed the necessary libraries. You can use pip for installation:
+     ```bash
+     pip install opencv-python numpy scikit-learn matplotlib
+     ```
+
+2. **Download SVM Model:**
+   - Make sure you have downloaded the SVM model from the file `model.pkl`.
+
+3. **Prepare Test Images:**
+   - Place test images in the `test` directory.
+
+4. **Predict and Evaluate on Test Images:**
+   - Run the Python script to predict and evaluate:
+     ```bash
+     python test.py
+     ```
+   - Results will be displayed in the terminal, and an accuracy chart per digit will be generated.
+
+
+## Notes
+- To use the pre-trained model, ensure you have installed the necessary libraries and have downloaded the model from the file `model.pkl`.
 # Hướng dẫn Sử Dụng và Mô Tả Dự Án
 
 ## Mục Đích Dự Án
@@ -51,7 +107,6 @@ Dự án này sử dụng máy học để nhận diện chữ số từ hình �
 
    - Kết quả sẽ được hiển thị thông qua terminal, và biểu đồ chính xác theo từng chữ số sẽ được tạo ra.
 
-5. **Hiển Thị Hình Ảnh Kết Quả:**
 
 
 ## Lưu Ý
